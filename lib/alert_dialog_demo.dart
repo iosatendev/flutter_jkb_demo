@@ -150,10 +150,14 @@ class AlertDialogDemo extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
+            const SizedBox(height: 15,),
             const Text("Custom Dialog", style: TextStyle(fontSize: 25),),
             const SizedBox(height: 15,),
-            const TextField(
-              decoration: InputDecoration(hintText: "Enter some text"),
+            const Padding(
+              padding:  EdgeInsets.all(15.0),
+              child: TextField(
+                decoration: InputDecoration(hintText: "Enter some text"),
+              ),
             ),
             const SizedBox(height: 35,),
             ElevatedButton(onPressed: () {
